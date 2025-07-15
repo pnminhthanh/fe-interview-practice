@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "question": "What is the difference between var, let, and const in JavaScript?",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "question": "What will be logged to the console?",
+    "code": "let a = 1;\nfunction foo() {\n  console.log(a);\n  var a = 2;\n}\nfoo();",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "question": "What is a closure in JavaScript? Provide an example.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "question": "What is the output of the following code?",
+    "code": "for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 100);\n}",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "question": "What is the value of 'this' inside a regular function vs an arrow function? Give an example.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "question": "What is the difference between '==' and '===' in JavaScript?",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "question": "What will be logged?",
+    "code": "const arr = [1, 2, 3];\narr[10] = 99;\nconsole.log(arr.length);",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "question": "How can you make an object immutable in JavaScript?",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "question": "What is the output?",
+    "code": "console.log(typeof null);",
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "question": "What is event delegation in JavaScript? Give an example.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "question": "What will be the output?",
+    "code": "console.log([...'hello']);",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "question": "Explain the concept of hoisting in JavaScript.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "question": "What is the difference between function declaration and function expression?",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "question": "What is the prototype chain? How does inheritance work in JavaScript?",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "question": "What is the output?",
+    "code": "console.log(0.1 + 0.2 === 0.3);",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "question": "What is a promise? How do you use async/await?",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "question": "What is the event loop? Explain microtasks and macrotasks.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "question": "What is the output?",
+    "code": "console.log([] + []);\nconsole.log([] + {});\nconsole.log({} + []);",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "question": "How do you deep clone an object in JavaScript?",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "question": "What is destructuring assignment? Give an example with arrays and objects.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 21,
+    "question": "What is the difference between call, apply, and bind?",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "question": "What is the output?",
+    "code": "console.log('5' - 2);\nconsole.log('5' + 2);",
+    "difficulty": "easy"
+  },
+  {
+    "id": 23,
+    "question": "What is a higher-order function? Give an example.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "question": "What is the difference between synchronous and asynchronous code?",
+    "difficulty": "easy"
+  },
+  {
+    "id": 25,
+    "question": "What is the output?",
+    "code": "let x = 10;\n(function() {\n  console.log(x);\n  var x = 20;\n})();",
+    "difficulty": "hard"
+  }
+]

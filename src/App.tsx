@@ -1,34 +1,38 @@
 import { useState } from "react";
 import "./App.css";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import CodeEditor from "./components/CodeEditor";
+import ListQuestion from "./components/ListQuestion";
+import questions from "./data/questions.json";
+
+interface Question {
+  id: number;
+  question: string;
+  difficulty: string;
+}
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [selectedQuestion, setSelectedQuestion] = useState<Question | null>(
+    questions[0]
+  );
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="flex h-screen overflow-hidden">
+      {/* Left: List of Questions */}
+      <ListQuestion
+        questions={questions}
+        selectedQuestion={selectedQuestion}
+        setSelectedQuestion={setSelectedQuestion}
+      />
+      {/* Right: Code Editor */}
+      <div className="w-3/4 h-screen flex flex-col p-4">
+        <h2 className="text-lg font-semibold mb-2">
+          {selectedQuestion?.question}
+        </h2>
+        <div className="flex-1 flex flex-col min-h-0">
+          <CodeEditor />
+        </div>
       </div>
-      <h1 className="text-3xl font-bold underline">Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   );
 }
 
